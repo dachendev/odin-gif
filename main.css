@@ -1,0 +1,92 @@
+/* Reset */
+:root {
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  line-height: normal;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Layout */
+.container {
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 960px;
+}
+
+/* Forms */
+.form-control {
+  --form-control-border-color: #ccc;
+  --form-control-focus-border-color: #007bff;
+  --form-control-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  display: block;
+  width: 100%;
+  border: 1px solid var(--form-control-border-color);
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  outline: 0;
+}
+
+.form-control:focus {
+  border-color: var(--form-control-focus-border-color);
+  box-shadow: var(--form-control-focus-box-shadow);
+}

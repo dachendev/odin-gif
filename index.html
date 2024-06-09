@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIFMe!</title>
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <style>
+      :root {
+        font-family: Inter, sans-serif;
+        font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+      }
+      @supports (font-variation-settings: normal) {
+        :root {
+          font-family: InterVariable, sans-serif;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container pt-8">
+      <h1 class="h1 mb-2">GIFMe!</h1>
+      <form>
+        <div class="flex items-center gap-2 mb-4">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search..."
+            class="form-control"
+          />
+        </div>
+      </form>
+      <img src="#" class="w-100" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
