@@ -31,6 +31,10 @@ button:not(:disabled) {
 }
 
 /* Utilities */
+.hidden {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -89,4 +93,22 @@ button:not(:disabled) {
 .form-control:focus {
   border-color: var(--form-control-focus-border-color);
   box-shadow: var(--form-control-focus-box-shadow);
+}
+
+/* Alert */
+.alert {
+  --alert-border-color: #ccc;
+  --alert-color: #555;
+  --alert-bg: #f8f9fa;
+  border: 1px solid var(--alert-border-color);
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  color: var(--alert-color);
+  background-color: var(--alert-bg);
+}
+
+.alert-error {
+  --alert-border-color: #d9534f;
+  --alert-color: #d9534f;
+  --alert-bg: #f2dede;
 }
