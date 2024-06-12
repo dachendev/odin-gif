@@ -145,7 +145,10 @@ function domLoaded() {
 
     // Translate the search string and update the image source
     translateAndUpdate(str).catch((error) => {
-      alert.setMessage(error.message);
+      console.error(error);
+
+      // Show the alert with the error message
+      alert.setMessage("Something went wrong. Please try again later.");
       alert.setStatus("error");
       alert.show();
     });
